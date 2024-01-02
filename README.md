@@ -1,1 +1,1 @@
-Repo for Zeyang Ma's personal website. The template is from https://senli1073.github.io/.
+Repo for Zeyang Ma's personal website. The template is from [Sen Li](https://senli1073.github.io)
