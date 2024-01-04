@@ -2,7 +2,7 @@
 I am currently a Ph.D. student in computer science in [Concordia University](https://www.concordia.ca/), under the supervision of [Dr. Tse-Hsun (Peter) Chen](https://petertsehsun.github.io/).
 
 #### Research Intersts
-Software Engineering, Mining Software Repositorys, Software Maintenance.
+Software Engineering, Mining Software Repositories, Software Maintenance.
 
 #### Email
 m_zeyang[at]encs.concordia.ca
