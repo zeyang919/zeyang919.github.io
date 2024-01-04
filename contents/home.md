@@ -5,7 +5,7 @@ I am currently a Ph.D. student in computer science in [Concordia University](htt
 Software Engineering, Mining Software Repositories, Software Maintenance.
 
 #### Email
-m_zeyang[at]encs.concordia.ca
+m_zeyang@encs.concordia.ca
 
 #### Education
 2023.01 - present, Ph.D. in Computer Science, [Concordia University](https://www.concordia.ca/).
