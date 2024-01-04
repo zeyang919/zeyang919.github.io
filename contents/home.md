@@ -19,7 +19,7 @@ m_zeyang@encs.concordia.ca
 TA in Concordia University 
 (SOEN 490 Capstone Design Project, Fall 2022, Winter 2023)
 
-Internship as Back-end Developer at [Shanghai Xiaoi Robot Technology Co.,Ltd](https://www.xiaoi.com/), Shanghai, China (Summer 2019)
+Internship as Back-end Developer at [XIAO-I Corporation](https://www.xiaoi.com/), Shanghai, China (Summer 2019)
 
 Internship as front & back-end developer at [Donghao Lansheng Zhiyeyun Team](https://www.dlg-tec.com/), Shanghai, China (Fall 2019)
 
