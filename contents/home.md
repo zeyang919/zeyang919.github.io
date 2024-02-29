@@ -14,12 +14,16 @@ m_zeyang@encs.concordia.ca
 
 2017.09 - 2021.07, Computer Science (Sino-French cooperation program), [Shanghai Normal University](https://english.shnu.edu.cn/).
 
-#### Experience
+#### Services and Experience
 
-TA in Concordia University 
-(SOEN 490 Capstone Design Project, Fall 2022, Winter 2023)
+- Conference Reviewer
+  - Conference Co-reviewer: SANER 2024, ICSE 2024-nier, FSE 2024
 
-Internship as Back-end Developer at [XIAO-I Corporation](https://www.xiaoi.com/), Shanghai, China (Summer 2019)
+- Teaching Assistant
+  - SOEN 490 Capstone Design Project in Concordia University, Fall 2022, Winter 2023
 
-Internship as front & back-end developer at [Donghao Lansheng Zhiyeyun Team](https://www.dlg-tec.com/), Shanghai, China (Fall 2019)
+- Internship Experience
+  - Back-end Developer at [XIAO-I Corporation](https://www.xiaoi.com/), Shanghai, China (Summer 2019)
+
+  - Front & Back-end developer at [Donghao Lansheng Zhiyeyun Team](https://www.dlg-tec.com/), Shanghai, China (Fall 2019)
 
