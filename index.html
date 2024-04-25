@@ -117,9 +117,7 @@
     <footer class="bg-bottom text-center py-5">
         <div class="container px-5">
             <div class="text-white-50 small">
-                <script>
-					document.write("Last updated at:" + " " +document.lastModified);
-                </script>
+                Last updated at: {{ site.time | date: "%Y-%m-%d %H:%M:%S" }}
                 <div id="copyright-text" class="mb-2"></div>
                 <a id="github-link" href="https://github.com/zeyang919/zeyang919.github.io">Github</a>
                 <span class="mx-1">&middot;</span>
