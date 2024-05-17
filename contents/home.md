@@ -17,7 +17,7 @@ m_zeyang@encs.concordia.ca
 #### Services and Experience
 
 - Conference Reviewer
-  - Conference Co-reviewer: SANER 2024, ICSE 2024-nier, FSE 2024, ICSME 2024
+  - Conference Co-reviewer:  FSE 2024, ICSME 2024, SANER 2024, ICSE 2024-nier
 
 - Teaching Assistant
   - SOEN 490 Capstone Design Project in Concordia University, Fall 2022, Winter 2023
