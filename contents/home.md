@@ -1,5 +1,5 @@
 
-I am currently a Ph.D. student in computer science in [Concordia University](https://www.concordia.ca/), under the supervision of [Dr. Tse-Hsun (Peter) Chen](https://petertsehsun.github.io/).
+I am currently a Ph.D. student in computer science at [Concordia University](https://www.concordia.ca/), under the supervision of [Dr. Tse-Hsun (Peter) Chen](https://petertsehsun.github.io/).
 
 #### Research Intersts
 Software Engineering, Mining Software Repositories, Software Maintenance.
@@ -17,13 +17,19 @@ m_zeyang@encs.concordia.ca
 #### Services and Experience
 
 - Conference Reviewer
-  - Conference Co-reviewer:  FSE 2024, ICSME 2024, SANER 2024, ICSE 2024-nier
+  - Journal reviewer: [ACM Transactions on Software Engineering and Methodology (TOSEM)](https://dl.acm.org/journal/tosem)
+  - Conference Co-reviewer:  FSE 2025, FSE 2024, ICSME 2024, SANER 2024, ICSE 2024-nier
 
 - Teaching Assistant
   - SOEN 490 Capstone Design Project in Concordia University, Fall 2022, Winter 2023
 
-- Internship Experience
-  - Back-end Developer at [XIAO-I Corporation](https://www.xiaoi.com/), Shanghai, China (Summer 2019)
+- Invited Presentation
+  - Consortium for Software Engineering Research (CSER 2024), Kingston, Canada. LLMParser: An Exploratory Study on Using Large Language Models for Log Parsing.
+  
+  - The 46th International Conference on Software Engineering (ICSE 2024), Portugal, Lisbon. LLMParser: An Exploratory Study on Using Large Language Models for Log Parsing.
 
-  - Front & Back-end developer at [Donghao Lansheng Zhiyeyun Team](https://www.dlg-tec.com/), Shanghai, China (Fall 2019)
+- Industrial Experience
+  - Back-end Developer intern at [XIAO-I Corporation](https://www.xiaoi.com/), Shanghai, China (Summer 2019)
+
+  - Front & Back-end developer intern at [Donghao Lansheng Zhiyeyun Team](https://www.dlg-tec.com/), Shanghai, China (Fall 2019)
 
