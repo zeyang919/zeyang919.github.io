@@ -36,5 +36,5 @@ m_zeyang@encs.concordia.ca
 - Industrial Experience
   - Back-end Developer intern at [XIAO-I Corporation](https://www.xiaoi.com/), Shanghai, China (Summer 2019)
 
-  - Front & Back-end developer intern at [Donghao Lansheng Zhiyeyun Team](https://www.dlg-tec.com/), Shanghai, China (Fall 2019)
+  - Front & Back-end developer intern at [Donghao Lansheng Zhiyeyun Team](https://www.ebls-group.com/), Shanghai, China (Fall 2019)
 
