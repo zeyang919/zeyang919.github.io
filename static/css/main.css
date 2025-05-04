@@ -93,29 +93,40 @@ section .main-body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 8rem;
 }
 
 .photo img {
-    margin-right: 10%;
     height: 12rem;
-    margin-top: 8rem;
+    margin-bottom: 0.5rem;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.3rem;
+    border-radius: 0.5rem;
 }
 
-.social-icons a {
-    color: white;
-    transition: transform 0.2s;
+.social-icon {
+    color: #000000;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
-.social-icons a:hover {
+.social-icon:hover {
     transform: scale(1.2);
-    color: white;
+    color: #000000;
+}
+
+.social-icon i {
+    display: inline-block;
+    transition: inherit;
 }
 
 .photo .screen {
