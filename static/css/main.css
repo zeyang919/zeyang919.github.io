@@ -90,6 +90,9 @@ section .main-body{
 
 .photo {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .photo img {
@@ -98,6 +101,22 @@ section .main-body{
     margin-top: 8rem;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: white;
+}
 
 .photo .screen {
     position: absolute;
