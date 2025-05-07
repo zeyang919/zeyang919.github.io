@@ -18,7 +18,7 @@ m_zeyang@encs.concordia.ca
 
 - Programme committee
   - Workshop comittee
-    - The International Workshop on Load Testing and Benchmarking of Software Systems (LTB)[2025](https://ltb2025.github.io/)
+    - The International Workshop on Load Testing and Benchmarking of Software Systems (LTB), [2025](https://ltb2025.github.io/)
 
 - Reviewer
   - Journal reviewer: 
