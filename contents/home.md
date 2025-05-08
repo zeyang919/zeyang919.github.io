@@ -1,7 +1,7 @@
 
 I am currently a Ph.D. student in computer science at [Concordia University](https://www.concordia.ca/), under the supervision of [Dr. Tse-Hsun (Peter) Chen](https://petertsehsun.github.io/).
 
-#### Research Intersts
+#### Research Interests
 Software Engineering, Mining Software Repositories, Software Maintenance.
 
 #### Email
@@ -17,7 +17,7 @@ m_zeyang@encs.concordia.ca
 #### Services and Experience
 
 - Programme committee
-  - Workshop comittee
+  - Workshop Committee
     - The International Workshop on Load Testing and Benchmarking of Software Systems (LTB), [2025](https://ltb2025.github.io/)
 
 - Reviewer
