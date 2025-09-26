@@ -30,6 +30,7 @@ m_zeyang@encs.concordia.ca
     - International Conference on Software Maintenance and Evolution (ICSME), Research Papers Track, [2024](https://conf.researchr.org/track/icsme-2024/)
     - IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER), Research Papers Track, [2024](https://conf.researchr.org/track/saner-2024/), [2025](https://conf.researchr.org/home/saner-2025)
     - IEEE/ACM International Conference on Software Engineering (ICSE), [2026](https://conf.researchr.org/home/icse-2026)
+    - IEEE/ACM International Conference on Automated Software Engineering (ASE), [2025](https://conf.researchr.org/home/ase-2025)
     - IEEE/ACM International Conference on Software Engineering (ICSE),The New Ideas and Emerging Results (NIER) track, [2024](https://conf.researchr.org/track/icse-2024/icse-2024-new-ideas-and-emerging-results?)
 - Teaching Assistant
   - SOEN 490 Capstone Design Project in Concordia University, Fall 2022, Winter 2023
