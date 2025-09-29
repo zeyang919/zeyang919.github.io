@@ -2,7 +2,7 @@
 
 - Conference Travel Support – Gina Cody School of Engineering and Computer Science (GCS, Concordia University), (2024, 2025)
 
-- Concordia University Conference and Exposition Award (Concordia University), (2023, 2024, 2025)
+- Concordia Conference and Exposition Allowance (Concordia University), (2023, 2024, 2025)
 
 - Concordia International Tuition Award of Excellence (Concordia University), (2021, 2023)
 
