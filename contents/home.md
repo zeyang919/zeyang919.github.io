@@ -23,7 +23,6 @@ m_zeyang@encs.concordia.ca
 - Reviewer
   - Journal reviewer: 
     - [ACM Transactions on Software Engineering and Methodology (TOSEM)](https://dl.acm.org/journal/tosem)
-  - Journal Co-reviewer:
     - [Empirical Software Engineering Journal (EMSE)](https://link.springer.com/journal/10664)
   - Conference Co-reviewer:  
     - ACM International Conference on the Foundations of Software Engineering (FSE), Research Papers Track, [2024](https://2024.esec-fse.org/), [2025](https://conf.researchr.org/track/fse-2025/)
