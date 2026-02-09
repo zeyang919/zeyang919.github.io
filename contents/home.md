@@ -4,8 +4,8 @@ I am currently a Ph.D. student in computer science at [Concordia University](htt
 #### Research Interests
 Software Engineering, Mining Software Repositories, Software Maintenance.
 
-#### Email
-m_zeyang@encs.concordia.ca
+<!-- #### Email
+m_zeyang@encs.concordia.ca -->
 
 #### Education
 2023.01 - Present, Ph.D. in Computer Science, [Concordia University](https://www.concordia.ca/).
@@ -39,8 +39,8 @@ m_zeyang@encs.concordia.ca
   
   - The 47th International Conference on Software Engineering [(ICSE 2025)](https://conf.researchr.org/home/icse-2025), Canada, Ottawa. VulNet: Towards Improving Vulnerability Management in the Maven Ecosystem.
 
-- Industrial Experience
+<!-- - Industrial Experience
   - Back-end Developer intern at [XIAO-I Corporation](https://www.xiaoi.com/), Shanghai, China (Summer 2019)
 
-  - Front & Back-end developer intern at [Donghao Lansheng Zhiyeyun Team](https://www.ebls-group.com/), Shanghai, China (Fall 2019)
+  - Front & Back-end developer intern at [Donghao Lansheng Zhiyeyun Team](https://www.ebls-group.com/), Shanghai, China (Fall 2019) -->
 
