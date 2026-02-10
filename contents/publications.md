@@ -1,4 +1,4 @@
-- `[Under Review]`  *<strong><strong>Zeyang Ma</strong></strong>, Jinqiu Yang, Tse-Hsun (Peter) Chen. LLM4Log: A Systematic Review of Large Language Model-based Log Analysis* [[Paper]](../paper/LLM4Log_Survey.pdf) [[Code]](https://github.com/zeyang919/LLM4Log)
+- `[Under Review]`  *<strong><strong>Zeyang Ma</strong></strong>, Jinqiu Yang, Tse-Hsun (Peter) Chen. LLM4Log: A Systematic Review of Large Language Model-based Log Analysis.* [[Paper]](../paper/LLM4Log_Survey.pdf) [[Code]](https://github.com/zeyang919/LLM4Log)
 
 - `[TOSEM 2025]`  *<strong><strong>Zeyang Ma</strong></strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen. Unsupervised, Accurate, and Efficient Log Parsing Using Smaller Open-Source Large Language Models. (2025). ACM Transactions on Software Engineering and Methodology.* [[Paper]](../paper/LibreLog_extension.pdf) [[Code]](https://github.com/zeyang919/LibreLog)
 
