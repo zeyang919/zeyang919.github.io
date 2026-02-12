@@ -2,12 +2,14 @@
 
 - Programme committee
   - Workshop Committee
-    - The International Workshop on Load Testing and Benchmarking of Software Systems (LTB), [2025](https://ltb2025.github.io/)
+    - The International Workshop on Load Testing and Benchmarking of Software Systems [(LTB 2025](https://ltb2025.github.io/)
+  - Web Chair
+    - 3rd ACM International Conference on AI-powered Software [(AIware 2026)](https://2026.aiwareconf.org/)
 
 - Reviewer
   - Journal reviewer: 
-    - [ACM Transactions on Software Engineering and Methodology (TOSEM)](https://dl.acm.org/journal/tosem)
-    - [Empirical Software Engineering Journal (EMSE)](https://link.springer.com/journal/10664)
+    - ACM Transactions on Software Engineering and Methodology [(TOSEM)](https://dl.acm.org/journal/tosem)
+    - Empirical Software Engineering Journal [(EMSE)](https://link.springer.com/journal/10664)
   - Conference Co-reviewer:  
     - ACM International Conference on the Foundations of Software Engineering (FSE), Research Papers Track, [2024](https://2024.esec-fse.org/), [2025](https://conf.researchr.org/track/fse-2025/)
     - International Conference on Software Maintenance and Evolution (ICSME), Research Papers Track, [2024](https://conf.researchr.org/track/icsme-2024/)
@@ -15,6 +17,7 @@
     - IEEE/ACM International Conference on Software Engineering (ICSE), [2026](https://conf.researchr.org/home/icse-2026)
     - IEEE/ACM International Conference on Automated Software Engineering (ASE), [2025](https://conf.researchr.org/home/ase-2025)
     - IEEE/ACM International Conference on Software Engineering (ICSE),The New Ideas and Emerging Results (NIER) track, [2024](https://conf.researchr.org/track/icse-2024/icse-2024-new-ideas-and-emerging-results?)
+  
 - Teaching Assistant
   - SOEN 490 Capstone Design Project in Concordia University, Fall 2022, Winter 2023
 
