@@ -2,7 +2,7 @@
 
 - Programme committee
   - Workshop Committee
-    - The International Workshop on Load Testing and Benchmarking of Software Systems [(LTB 2025](https://ltb2025.github.io/)
+    - The International Workshop on Load Testing and Benchmarking of Software Systems [(LTB 2025)](https://ltb2025.github.io/)
   - Web Chair
     - 3rd ACM International Conference on AI-powered Software [(AIware 2026)](https://2026.aiwareconf.org/)
 
