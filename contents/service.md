@@ -16,6 +16,7 @@
     - IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER), Research Papers Track, [2024](https://conf.researchr.org/track/saner-2024/), [2025](https://conf.researchr.org/home/saner-2025)
     - IEEE/ACM International Conference on Software Engineering (ICSE), [2026](https://conf.researchr.org/home/icse-2026)
     - IEEE/ACM International Conference on Automated Software Engineering (ASE), [2025](https://conf.researchr.org/home/ase-2025)
+    - The ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA), [2026](https://conf.researchr.org/home/issta-2026)
     - IEEE/ACM International Conference on Software Engineering (ICSE),The New Ideas and Emerging Results (NIER) track, [2024](https://conf.researchr.org/track/icse-2024/icse-2024-new-ideas-and-emerging-results?)
   
 - Teaching Assistant
