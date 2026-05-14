@@ -28,6 +28,7 @@
 .top-section .top-section-content {
     position: relative;
     z-index: 1;
+    pointer-events: none;
 }
 
 .top-section:before {
@@ -38,19 +39,36 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0);
+    pointer-events: none;
 }
 
 section header h2{
-    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif !important;
     color: var(--h-title-color);
-    font-size: 2.3rem;
-    line-height: 4rem;
+    font-size: 1.95rem;
+    line-height: 2.9rem;
+    user-select: text;
+}
+
+section header h2 i {
+    user-select: text;
+}
+
+aside,
+section {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.home-section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 section .main-body{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 200;
-    line-height: 2.4rem;
+    line-height: 1.9rem;
 }
 
 
@@ -93,7 +111,14 @@ section .main-body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 0;
+    pointer-events: auto;
+}
+
+.profile-column {
+    display: flex;
+    justify-content: center;
+    margin-top: -10rem;
 }
 
 .photo img {
@@ -114,7 +139,7 @@ section .main-body{
 
 .social-icon {
     color: #000000;
-    font-size: 1.8rem;
+    font-size: 1.55rem;
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
@@ -142,8 +167,15 @@ section .main-body{
 }
 
 @media screen and (max-width: 991px) {
+    .profile-column {
+        justify-content: flex-end;
+        margin-top: -6rem;
+        margin-bottom: 1rem;
+        padding-right: 1rem;
+    }
+
     .photo {
-        margin-top: 5rem;
+        margin-top: 0;
     }
 
     .photo img {
@@ -157,13 +189,25 @@ section .main-body{
     }
 
     .social-icon {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
 @media screen and (max-width: 736px) {
+    aside,
+    section {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
     .photo {
-        margin-top: 5rem;
+        margin-top: 0;
+    }
+
+    .profile-column {
+        margin-top: -7rem;
+        margin-bottom: 1.25rem;
+        padding-right: 0.5rem;
     }
 
     .photo img {
@@ -177,7 +221,6 @@ section .main-body{
     }
 
     .social-icon {
-        font-size: 1.3rem;
+        font-size: 1.15rem;
     }
 }
-

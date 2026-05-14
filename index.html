@@ -12,12 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..800;1,300..800&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600;1,8..60,700&amp;display=swap"
         rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
@@ -49,6 +45,9 @@
                         <a class="nav-link me-lg-3" href="#publications" target="_self">PUBLICATIONS</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#education" target="_self">EDUCATION</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link me-lg-3" href="#service" target="_self">SERVICE</a>
                     </li>
                     <li class="nav-item">
@@ -68,25 +67,6 @@
                     <div class="col-lg-8">
                         <h2 id="top-section-bg-text" class="text-white display-3 lh-1 mb-4 font-alt"></h2>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="user-photo photo">
-                            <img class="shadow" src="static/assets/img/photo.png">
-                            <div class="social-icons">
-                                <a href="mailto:m_zeyang@encs.concordia.ca" class="social-icon" title="Email">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a href="https://github.com/zeyang919" class="social-icon">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/zeyangma/" class="social-icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="https://scholar.google.ca/citations?user=8TN9kGAAAAAJ&hl=en" class="social-icon" title="Google Scholar">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -95,13 +75,36 @@
 
 
     <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+    <section class="home-section bg-gradient-primary-to-secondary-light mt5 md5" id="home">
         <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
+            <div class="row align-items-start">
+                <div class="col-lg-8 order-2 order-lg-1">
+                    <header>
+                        <h2 id="home-subtitle"> </h2>
+                        <!-- <span class="bi bi-list"></span> -->
+                    </header>
+                    <div class="main-body" id="home-md"></div>
+                </div>
+                <div class="col-lg-4 profile-column order-1 order-lg-2">
+                    <div class="user-photo photo">
+                        <img class="shadow" src="static/assets/img/photo.png">
+                        <div class="social-icons">
+                            <a href="mailto:m_zeyang@encs.concordia.ca" class="social-icon" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://github.com/zeyang919" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/zeyangma/" class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://scholar.google.ca/citations?user=8TN9kGAAAAAJ&hl=en" class="social-icon" title="Google Scholar">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
         </div>
@@ -120,8 +123,20 @@
     </section>
     <!-- Publications  -->
 
+    <!-- Education -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="education">
+        <div class="container px-5">
+            <header>
+                <h2 id="education-subtitle"><i class="bi bi-mortarboard-fill"></i>&nbsp;EDUCATION</h2>
+            </header>
+            <div class="main-body" id="education-md"></div>
+
+        </div>
+    </section>
+    <!-- Education  -->
+
     <!-- Service -->
-        <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="service">
+        <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="service">
             <div class="container px-5">
                 <header>
                     <h2 id="service-subtitle"><i class="bi bi-pc-display"></i>&nbsp;SERVICE</h2>
@@ -133,7 +148,7 @@
     <!-- Service  -->
 
     <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="awards">
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
         <div class="container px-5">
             <header>
                 <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>

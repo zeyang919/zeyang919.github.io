@@ -1,3 +1,6 @@
 *.DS_Store
 /.idea
 /.history
+/.claude
+/CLAUDE.md
+/docs/
