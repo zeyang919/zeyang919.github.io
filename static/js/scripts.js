@@ -2,13 +2,58 @@
 
 const content_dir = 'contents/'
 const config_file = 'config.yml'
-const content_version = '2026-05-14-2'
+const content_version = '2026-05-14-9'
 const section_names = ['home', 'publications', 'education', 'service', 'awards']
 
 const contentUrl = (path) => `${path}?v=${content_version}`
 
+const themeStorageKey = 'theme'
+const systemTheme = () => window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+const storedTheme = () => {
+    try {
+        const theme = localStorage.getItem(themeStorageKey)
+        return theme === 'dark' || theme === 'light' ? theme : null
+    } catch {
+        return null
+    }
+}
+const activeTheme = () => storedTheme() || systemTheme()
+
+const applyTheme = (theme) => {
+    document.documentElement.dataset.theme = theme
+    const toggle = document.getElementById('theme-toggle')
+    if (!toggle) {
+        return
+    }
+
+    const isDark = theme === 'dark'
+    toggle.setAttribute('aria-label', `Switch to ${isDark ? 'light' : 'dark'} theme`)
+    toggle.title = `Switch to ${isDark ? 'light' : 'dark'} theme`
+    toggle.innerHTML = `<i class="bi ${isDark ? 'bi-sun-fill' : 'bi-moon-stars-fill'}" aria-hidden="true"></i>`
+}
+
 
 window.addEventListener('DOMContentLoaded', event => {
+    applyTheme(activeTheme())
+
+    const themeToggle = document.getElementById('theme-toggle')
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'
+            try {
+                localStorage.setItem(themeStorageKey, nextTheme)
+            } catch {
+                console.log('Theme preference could not be saved')
+            }
+            applyTheme(nextTheme)
+        })
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        if (!storedTheme()) {
+            applyTheme(systemTheme())
+        }
+    })
 
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
