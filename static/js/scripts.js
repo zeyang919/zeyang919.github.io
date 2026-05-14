@@ -2,7 +2,10 @@
 
 const content_dir = 'contents/'
 const config_file = 'config.yml'
+const content_version = '2026-05-14-2'
 const section_names = ['home', 'publications', 'education', 'service', 'awards']
+
+const contentUrl = (path) => `${path}?v=${content_version}`
 
 
 window.addEventListener('DOMContentLoaded', event => {
@@ -31,7 +34,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
     // Yaml
-    fetch(content_dir + config_file)
+    fetch(contentUrl(content_dir + config_file))
         .then(response => response.text())
         .then(text => {
             const yml = jsyaml.load(text);
@@ -50,7 +53,7 @@ window.addEventListener('DOMContentLoaded', event => {
     // Marked
     marked.use({ mangle: false, headerIds: false })
     section_names.forEach((name, idx) => {
-        fetch(content_dir + name + '.md')
+        fetch(contentUrl(content_dir + name + '.md'))
             .then(response => response.text())
             .then(markdown => {
                 const html = marked.parse(markdown);
