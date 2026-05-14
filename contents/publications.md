@@ -1,11 +1,37 @@
-- `[Under Review]`  *<strong><strong>Zeyang Ma</strong></strong>, Jinqiu Yang, Tse-Hsun (Peter) Chen. LLM4Log: A Systematic Review of Large Language Model-based Log Analysis.* [[Paper]](../paper/LLM4Log_Survey.pdf) [[Code]](https://github.com/zeyang919/LLM4Log)
+<div class="publication-list">
+  <article class="publication-card">
+    <h3>LLM4Log: A Systematic Review of Large Language Model-based Log Analysis <a href="paper/LLM4Log_Survey.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LLM4Log">[Code]</a></h3>
+    <p class="publication-authors"><strong>Zeyang Ma</strong>, Jinqiu Yang, Tse-Hsun (Peter) Chen</p>
+    <p class="publication-venue">Under Review</p>
+  </article>
 
-- `[TOSEM 2025]`  *<strong><strong>Zeyang Ma</strong></strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen. Unsupervised, Accurate, and Efficient Log Parsing Using Smaller Open-Source Large Language Models. (2025). ACM Transactions on Software Engineering and Methodology.* [[Paper]](../paper/LibreLog_extension.pdf) [[Code]](https://github.com/zeyang919/LibreLog)
+  <article class="publication-card">
+    <h3>Unsupervised, Accurate, and Efficient Log Parsing Using Smaller Open-Source Large Language Models <a href="paper/LibreLog_extension.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LibreLog">[Code]</a></h3>
+    <p class="publication-authors"><strong>Zeyang Ma</strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
+    <p class="publication-venue">ACM Transactions on Software Engineering and Methodology (TOSEM 2025)</p>
+  </article>
 
-- `[ICST 2025]`  *Yi Wen Heng, <strong><strong>Zeyang Ma</strong></strong>, Zhenhao Li, Dong Jae Kim, Tse-Hsun (Peter) Chen. Benchmarking Open-source Large Language Models For Log Level Suggestion. (2025). The 18th IEEE International Conference on Software Testing, Verification and Validation.* [[Paper]](../paper/LogLevelLLM.pdf) [[Code]](https://github.com/sunnyh404/LogLevelLLM)
+  <article class="publication-card">
+    <h3>Benchmarking Open-source Large Language Models For Log Level Suggestion <a href="paper/LogLevelLLM.pdf">[Paper]</a> <a href="https://github.com/sunnyh404/LogLevelLLM">[Code]</a></h3>
+    <p class="publication-authors">Yi Wen Heng, <strong>Zeyang Ma</strong>, Zhenhao Li, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
+    <p class="publication-venue">18th IEEE International Conference on Software Testing, Verification and Validation (ICST 2025)</p>
+  </article>
 
-- `[ICSE 2025]`  *<strong><strong>Zeyang Ma</strong></strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen. LibreLog: Accurate and Efficient Unsupervised Log Parsing Using Open-Source Large Language Models. (2025). The 47th IEEE/ACM International Conference on Software Engineering.* [[Paper]](../paper/LibreLog.pdf) [[Code]](https://github.com/zeyang919/LibreLog)
+  <article class="publication-card">
+    <h3>LibreLog: Accurate and Efficient Unsupervised Log Parsing Using Open-Source Large Language Models <a href="paper/LibreLog.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LibreLog">[Code]</a></h3>
+    <p class="publication-authors"><strong>Zeyang Ma</strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
+    <p class="publication-venue">47th IEEE/ACM International Conference on Software Engineering (ICSE 2025)</p>
+  </article>
 
-- `[ICSE 2024]`  *<strong><strong>Zeyang Ma</strong></strong>, An Ran Chen, Dong Jae Kim, Tse-Hsun (Peter) Chen, Shaowei Wang. LLMParser: An Exploratory Study on Using Large Language Models for Log Parsing. (2024). The 46th IEEE/ACM International Conference on Software Engineering.* [[Paper]](../paper/LLMParser.pdf) [[Code]](https://github.com/zeyang919/LLMParser)
+  <article class="publication-card">
+    <h3>LLMParser: An Exploratory Study on Using Large Language Models for Log Parsing <a href="paper/LLMParser.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LLMParser">[Code]</a></h3>
+    <p class="publication-authors"><strong>Zeyang Ma</strong>, An Ran Chen, Dong Jae Kim, Tse-Hsun (Peter) Chen, Shaowei Wang</p>
+    <p class="publication-venue">46th IEEE/ACM International Conference on Software Engineering (ICSE 2024)</p>
+  </article>
 
-- `[EMSE 2024]` *<strong><strong>Zeyang Ma</strong></strong>, Shouvick Mondal, Tse-Hsun (Peter) Chen, Haoxiang Zhang, Ahmed E. Hassan. VulNet: Towards Improving Vulnerability Management in the Maven Ecosystem. (2024). Empirical Software Engineering Journal, January 2024.* [[Paper]](../paper/Vulnet.pdf) [[Code]](https://github.com/SPEAR-SE/Vulnet)
+  <article class="publication-card">
+    <h3>VulNet: Towards Improving Vulnerability Management in the Maven Ecosystem <a href="paper/Vulnet.pdf">[Paper]</a> <a href="https://github.com/SPEAR-SE/Vulnet">[Code]</a></h3>
+    <p class="publication-authors"><strong>Zeyang Ma</strong>, Shouvick Mondal, Tse-Hsun (Peter) Chen, Haoxiang Zhang, Ahmed E. Hassan</p>
+    <p class="publication-venue">Empirical Software Engineering Journal (EMSE 2024)</p>
+  </article>
+</div>

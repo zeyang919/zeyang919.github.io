@@ -71,6 +71,78 @@ section .main-body{
     line-height: 1.9rem;
 }
 
+section .main-body ul,
+section .main-body ol {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+section .main-body li {
+    margin-bottom: 0.12rem;
+}
+
+section .main-body li > p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section .main-body li > ul,
+section .main-body li > ol {
+    margin-top: 0.12rem;
+    margin-bottom: 0.12rem;
+}
+
+.publication-list {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.publication-card {
+    background: #ffffff;
+    border: 1px solid rgba(57, 72, 210, 0.12);
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    padding: 0.8rem 0.9rem;
+}
+
+.publication-card h3 {
+    color: #2d2f35;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.08rem;
+    font-weight: 750;
+    line-height: 1.35;
+    margin: 0 0 0.25rem;
+}
+
+.publication-card h3 a {
+    font-weight: 750;
+    white-space: nowrap;
+}
+
+.publication-authors,
+.publication-venue {
+    margin: 0;
+}
+
+.publication-authors {
+    color: #5f6368;
+    font-size: 1rem;
+    line-height: 1.45;
+}
+
+.publication-authors strong {
+    color: #22252a;
+    font-weight: 800;
+}
+
+.publication-venue {
+    color: #008000;
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 0.15rem;
+}
+
 
 .bg-gradient-primary-to-secondary-light {
     background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;
