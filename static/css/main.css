@@ -1,6 +1,3 @@
-@import "./styles.css";
-
-
 :root{
     color-scheme: light;
     --h-title-color: #3948d2;
@@ -209,6 +206,23 @@ section .main-body{
     color: var(--body-text);
 }
 
+section .main-body h4 {
+    color: var(--strong-text);
+    font-size: 1.28rem;
+    font-weight: 800;
+    line-height: 1.35;
+    margin: 1.05rem 0 0.35rem;
+}
+
+section .main-body h5 {
+    color: var(--h-title-color);
+    font-size: 1rem;
+    font-weight: 750;
+    letter-spacing: 0;
+    line-height: 1.35;
+    margin: 0.8rem 0 0.2rem;
+}
+
 section .main-body ul,
 section .main-body ol {
     margin-top: 0;
@@ -333,6 +347,8 @@ section .main-body li > ol {
 
 .photo img {
     height: 12rem;
+    width: 12rem;
+    object-fit: cover;
     margin-bottom: 0.5rem;
 }
 
@@ -409,6 +425,7 @@ section .main-body li > ol {
 
     .photo img {
         height: 10rem;
+        width: 10rem;
         margin-bottom: 0.3rem;
     }
 
@@ -441,6 +458,7 @@ section .main-body li > ol {
 
     .photo img {
         height: 8rem;
+        width: 8rem;
         margin-bottom: 0.2rem;
     }
 

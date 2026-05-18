@@ -18,6 +18,12 @@ const storedTheme = () => {
     }
 }
 const activeTheme = () => storedTheme() || systemTheme()
+const fetchText = (url) => fetch(url).then(response => {
+    if (!response.ok) {
+        throw new Error(`Could not load ${url}: ${response.status}`)
+    }
+    return response.text()
+})
 
 const applyTheme = (theme) => {
     document.documentElement.dataset.theme = theme
@@ -79,13 +85,17 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
     // Yaml
-    fetch(contentUrl(content_dir + config_file))
-        .then(response => response.text())
+    fetchText(contentUrl(content_dir + config_file))
         .then(text => {
             const yml = jsyaml.load(text);
             Object.keys(yml).forEach(key => {
+                const element = document.getElementById(key)
+                if (!element) {
+                    console.log("Unknown id and value: " + key + "," + yml[key].toString())
+                    return
+                }
                 try {
-                    document.getElementById(key).innerHTML = yml[key];
+                    element.innerHTML = yml[key];
                 } catch {
                     console.log("Unknown id and value: " + key + "," + yml[key].toString())
                 }
@@ -98,14 +108,18 @@ window.addEventListener('DOMContentLoaded', event => {
     // Marked
     marked.use({ mangle: false, headerIds: false })
     section_names.forEach((name, idx) => {
-        fetch(contentUrl(content_dir + name + '.md'))
-            .then(response => response.text())
+        fetchText(contentUrl(content_dir + name + '.md'))
             .then(markdown => {
                 const html = marked.parse(markdown);
-                document.getElementById(name + '-md').innerHTML = html;
+                const section = document.getElementById(name + '-md')
+                if (section) {
+                    section.innerHTML = html;
+                }
             }).then(() => {
                 // MathJax
-                MathJax.typeset();
+                if (window.MathJax && MathJax.typeset) {
+                    MathJax.typeset();
+                }
             })
             .catch(error => console.log(error));
     })
