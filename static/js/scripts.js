@@ -2,7 +2,7 @@
 
 const content_dir = 'contents/'
 const config_file = 'config.yml'
-const content_version = '2026-05-14-9'
+const content_version = '2026-05-18-1'
 const section_names = ['home', 'publications', 'education', 'service', 'awards']
 
 const contentUrl = (path) => `${path}?v=${content_version}`
