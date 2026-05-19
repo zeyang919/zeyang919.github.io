@@ -13,6 +13,7 @@
 
 - ACM Transactions on Software Engineering and Methodology [(TOSEM)](https://dl.acm.org/journal/tosem)
 - Empirical Software Engineering Journal [(EMSE)](https://link.springer.com/journal/10664)
+- PeerJ Computer Science [(PeerJ CS)](https://peerj.com/computer-science/)
 
 ##### Conference Co-reviewer
 
