@@ -24,6 +24,12 @@ const fetchText = (url) => fetch(url).then(response => {
     }
     return response.text()
 })
+const prepareLinks = (root = document) => {
+    root.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(link => {
+        link.target = '_blank'
+        link.rel = 'noopener noreferrer'
+    })
+}
 
 const applyTheme = (theme) => {
     document.documentElement.dataset.theme = theme
@@ -41,6 +47,7 @@ const applyTheme = (theme) => {
 
 window.addEventListener('DOMContentLoaded', event => {
     applyTheme(activeTheme())
+    prepareLinks()
 
     const themeToggle = document.getElementById('theme-toggle')
     if (themeToggle) {
@@ -114,6 +121,7 @@ window.addEventListener('DOMContentLoaded', event => {
                 const section = document.getElementById(name + '-md')
                 if (section) {
                     section.innerHTML = html;
+                    prepareLinks(section)
                 }
             }).then(() => {
                 // MathJax

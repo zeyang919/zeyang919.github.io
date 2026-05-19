@@ -22,6 +22,7 @@
     --icon-color: #000000;
     --toggle-bg: rgba(57, 72, 210, 0.08);
     --toggle-border: rgba(57, 72, 210, 0.18);
+    --top-background-image: url('../assets/img/background.jpeg');
     --top-overlay: rgba(0, 0, 0, 0);
     --bs-body-color: var(--body-text);
     --bs-body-bg: var(--page-bg);
@@ -53,6 +54,7 @@ html[data-theme="dark"] {
     --icon-color: #f5f6fb;
     --toggle-bg: rgba(143, 156, 255, 0.14);
     --toggle-border: rgba(143, 156, 255, 0.32);
+    --top-background-image: url('../assets/img/background_night.png');
     --top-overlay: rgba(0, 0, 0, 0.18);
     --bs-body-color: var(--body-text);
     --bs-body-bg: var(--page-bg);
@@ -88,6 +90,7 @@ body {
 .top-section {
     position: relative;
     padding: 10rem 0;
+    background-image: var(--top-background-image);
     background-position: center;
     background-size: cover;
     height: 25rem;
@@ -349,6 +352,7 @@ section .main-body li > ol {
     height: 12rem;
     width: 12rem;
     object-fit: cover;
+    box-shadow: 0 0.85rem 2rem rgba(0, 0, 0, 0.38), 0 0 0 1px rgba(255, 255, 255, 0.18);
     margin-bottom: 0.5rem;
 }
 
@@ -393,6 +397,11 @@ section .main-body li > ol {
 }
 
 @media screen and (max-width: 991px) {
+    .top-section {
+        height: 18rem;
+        padding: 6rem 0;
+    }
+
     #mainNav .navbar-brand {
         order: 1;
     }
@@ -414,7 +423,7 @@ section .main-body li > ol {
 
     .profile-column {
         justify-content: flex-end;
-        margin-top: -6rem;
+        margin-top: -4.75rem;
         margin-bottom: 1rem;
         padding-right: 1rem;
     }
@@ -440,6 +449,30 @@ section .main-body li > ol {
 }
 
 @media screen and (max-width: 736px) {
+    .top-section {
+        height: 12.5rem;
+        padding: 4rem 0;
+    }
+
+    section header h2 {
+        font-size: 1.78rem;
+        line-height: 2.45rem;
+    }
+
+    #home-subtitle {
+        font-size: 1.52rem;
+        line-height: 2.15rem;
+        max-width: none;
+    }
+
+    .home-section .row {
+        position: relative;
+    }
+
+    .home-section {
+        padding-top: 1rem;
+    }
+
     aside,
     section {
         padding-top: 1rem;
@@ -451,14 +484,24 @@ section .main-body li > ol {
     }
 
     .profile-column {
-        margin-top: -7rem;
-        margin-bottom: 1.25rem;
+        height: 0;
+        justify-content: flex-end;
+        margin-top: 0;
+        margin-bottom: 0;
         padding-right: 0.5rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    .profile-column .photo {
+        position: absolute;
+        right: 0.5rem;
+        top: -8.45rem;
     }
 
     .photo img {
-        height: 8rem;
-        width: 8rem;
+        height: 7.5rem;
+        width: 7.5rem;
         margin-bottom: 0.2rem;
     }
 

@@ -30,7 +30,16 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link type="text/css" href="static/css/styles.css?v=2026-05-14-9" rel="stylesheet" />
     <link type="text/css" href="static/css/main.css?v=2026-05-14-9" rel="stylesheet" />
-    <base target="_blank">
+    <link rel="canonical" href="https://zeyang919.github.io/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Zeyang Ma" />
+    <meta property="og:description" content="Ph.D. student in Computer Science at Concordia University researching software engineering, mining software repositories, software maintenance, and large language models for log analysis." />
+    <meta property="og:url" content="https://zeyang919.github.io/" />
+    <meta property="og:image" content="https://zeyang919.github.io/static/assets/img/photo.webp" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Zeyang Ma" />
+    <meta name="twitter:description" content="Ph.D. student in Computer Science at Concordia University researching software engineering and large language models for log analysis." />
+    <meta name="twitter:image" content="https://zeyang919.github.io/static/assets/img/photo.webp" />
     <meta name="google-site-verification" content="nph7gNZaKLty3F7AbQZnI18MWMT2IRvA09GQW7b4X_s" />
     <script type="application/ld+json">
         {
@@ -101,7 +110,7 @@
     </nav>
 
     <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
+    <section class="top-section">
         <div class="top-section-content">
             <div class="container px-5">
                 <div class="row">
@@ -123,10 +132,11 @@
                     <header>
                         <h1 class="visually-hidden">Zeyang Ma</h1>
                         <h2 id="home-subtitle"> </h2>
-                        <!-- <span class="bi bi-list"></span> -->
                     </header>
                     <div class="main-body" id="home-md">
-                        <p>I am a Ph.D. student in Computer Science at <a href="https://www.concordia.ca/">Concordia University</a>, advised by <a href="https://petertsehsun.github.io/">Dr. Tse-Hsun (Peter) Chen</a>. My research focuses on software engineering, mining software repositories, and software maintenance, with a particular interest in using large language models to improve log analysis and developer support.</p>
+                        <!-- fallback-home:start -->
+                        <p>I am a Ph.D. student in Computer Science at <a href="https://www.concordia.ca/" target="_blank" rel="noopener noreferrer">Concordia University</a>, advised by <a href="https://petertsehsun.github.io/" target="_blank" rel="noopener noreferrer">Dr. Tse-Hsun (Peter) Chen</a>. My research focuses on software engineering, mining software repositories, and software maintenance, with a particular interest in using large language models to improve log analysis and developer support.</p>
+                <!-- fallback-home:end -->
                     </div>
                 </div>
                 <div class="col-lg-4 profile-column order-1 order-lg-2">
@@ -136,13 +146,13 @@
                             <a href="mailto:zeyang919@gmail.com" class="social-icon" title="Email" aria-label="Email Zeyang Ma">
                                 <i class="bi bi-envelope-fill"></i>
                             </a>
-                            <a href="https://github.com/zeyang919" class="social-icon" title="GitHub" aria-label="Zeyang Ma on GitHub">
+                            <a href="https://github.com/zeyang919" class="social-icon" title="GitHub" aria-label="Zeyang Ma on GitHub" target="_blank" rel="noopener noreferrer">
                                 <i class="bi bi-github"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/zeyangma/" class="social-icon" title="LinkedIn" aria-label="Zeyang Ma on LinkedIn">
+                            <a href="https://www.linkedin.com/in/zeyangma/" class="social-icon" title="LinkedIn" aria-label="Zeyang Ma on LinkedIn" target="_blank" rel="noopener noreferrer">
                                 <i class="bi bi-linkedin"></i>
                             </a>
-                            <a href="https://scholar.google.ca/citations?user=8TN9kGAAAAAJ&hl=en" class="social-icon" title="Google Scholar" aria-label="Zeyang Ma on Google Scholar">
+                            <a href="https://scholar.google.ca/citations?user=8TN9kGAAAAAJ&hl=en" class="social-icon" title="Google Scholar" aria-label="Zeyang Ma on Google Scholar" target="_blank" rel="noopener noreferrer">
                                 <i class="bi bi-mortarboard-fill"></i>
                             </a>
                         </div>
@@ -162,38 +172,45 @@
                 <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
             </header>
             <div class="main-body" id="publications-md">
+                <!-- fallback-publications:start -->
                 <div class="publication-list">
-                    <article class="publication-card">
-                        <h3>LLM4Log: A Systematic Review of Large Language Model-based Log Analysis <a href="paper/LLM4Log_Survey.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LLM4Log">[Code]</a></h3>
-                        <p class="publication-authors"><strong>Zeyang Ma</strong>, Jinqiu Yang, Tse-Hsun (Peter) Chen</p>
-                        <p class="publication-venue">Under Review</p>
-                    </article>
-                    <article class="publication-card">
-                        <h3>Unsupervised, Accurate, and Efficient Log Parsing Using Smaller Open-Source Large Language Models <a href="paper/LibreLog_extension.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LibreLog">[Code]</a></h3>
-                        <p class="publication-authors"><strong>Zeyang Ma</strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
-                        <p class="publication-venue">ACM Transactions on Software Engineering and Methodology (TOSEM 2025)</p>
-                    </article>
-                    <article class="publication-card">
-                        <h3>Benchmarking Open-source Large Language Models For Log Level Suggestion <a href="paper/LogLevelLLM.pdf">[Paper]</a> <a href="https://github.com/sunnyh404/LogLevelLLM">[Code]</a></h3>
-                        <p class="publication-authors">Yi Wen Heng, <strong>Zeyang Ma</strong>, Zhenhao Li, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
-                        <p class="publication-venue">18th IEEE International Conference on Software Testing, Verification and Validation (ICST 2025)</p>
-                    </article>
-                    <article class="publication-card">
-                        <h3>LibreLog: Accurate and Efficient Unsupervised Log Parsing Using Open-Source Large Language Models <a href="paper/LibreLog.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LibreLog">[Code]</a></h3>
-                        <p class="publication-authors"><strong>Zeyang Ma</strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
-                        <p class="publication-venue">47th IEEE/ACM International Conference on Software Engineering (ICSE 2025)</p>
-                    </article>
-                    <article class="publication-card">
-                        <h3>LLMParser: An Exploratory Study on Using Large Language Models for Log Parsing <a href="paper/LLMParser.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LLMParser">[Code]</a></h3>
-                        <p class="publication-authors"><strong>Zeyang Ma</strong>, An Ran Chen, Dong Jae Kim, Tse-Hsun (Peter) Chen, Shaowei Wang</p>
-                        <p class="publication-venue">46th IEEE/ACM International Conference on Software Engineering (ICSE 2024)</p>
-                    </article>
-                    <article class="publication-card">
-                        <h3>VulNet: Towards Improving Vulnerability Management in the Maven Ecosystem <a href="paper/Vulnet.pdf">[Paper]</a> <a href="https://github.com/SPEAR-SE/Vulnet">[Code]</a></h3>
-                        <p class="publication-authors"><strong>Zeyang Ma</strong>, Shouvick Mondal, Tse-Hsun (Peter) Chen, Haoxiang Zhang, Ahmed E. Hassan</p>
-                        <p class="publication-venue">Empirical Software Engineering Journal (EMSE 2024)</p>
-                    </article>
+                  <article class="publication-card">
+                    <h3>LLM4Log: A Systematic Review of Large Language Model-based Log Analysis <a href="paper/LLM4Log_Survey.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LLM4Log" target="_blank" rel="noopener noreferrer">[Code]</a></h3>
+                    <p class="publication-authors"><strong>Zeyang Ma</strong>, Jinqiu Yang, Tse-Hsun (Peter) Chen</p>
+                    <p class="publication-venue">Under Review</p>
+                  </article>
+
+                  <article class="publication-card">
+                    <h3>Unsupervised, Accurate, and Efficient Log Parsing Using Smaller Open-Source Large Language Models <a href="paper/LibreLog_extension.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LibreLog" target="_blank" rel="noopener noreferrer">[Code]</a></h3>
+                    <p class="publication-authors"><strong>Zeyang Ma</strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
+                    <p class="publication-venue">ACM Transactions on Software Engineering and Methodology (TOSEM 2025)</p>
+                  </article>
+
+                  <article class="publication-card">
+                    <h3>Benchmarking Open-source Large Language Models For Log Level Suggestion <a href="paper/LogLevelLLM.pdf">[Paper]</a> <a href="https://github.com/sunnyh404/LogLevelLLM" target="_blank" rel="noopener noreferrer">[Code]</a></h3>
+                    <p class="publication-authors">Yi Wen Heng, <strong>Zeyang Ma</strong>, Zhenhao Li, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
+                    <p class="publication-venue">18th IEEE International Conference on Software Testing, Verification and Validation (ICST 2025)</p>
+                  </article>
+
+                  <article class="publication-card">
+                    <h3>LibreLog: Accurate and Efficient Unsupervised Log Parsing Using Open-Source Large Language Models <a href="paper/LibreLog.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LibreLog" target="_blank" rel="noopener noreferrer">[Code]</a></h3>
+                    <p class="publication-authors"><strong>Zeyang Ma</strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
+                    <p class="publication-venue">47th IEEE/ACM International Conference on Software Engineering (ICSE 2025)</p>
+                  </article>
+
+                  <article class="publication-card">
+                    <h3>LLMParser: An Exploratory Study on Using Large Language Models for Log Parsing <a href="paper/LLMParser.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LLMParser" target="_blank" rel="noopener noreferrer">[Code]</a></h3>
+                    <p class="publication-authors"><strong>Zeyang Ma</strong>, An Ran Chen, Dong Jae Kim, Tse-Hsun (Peter) Chen, Shaowei Wang</p>
+                    <p class="publication-venue">46th IEEE/ACM International Conference on Software Engineering (ICSE 2024)</p>
+                  </article>
+
+                  <article class="publication-card">
+                    <h3>VulNet: Towards Improving Vulnerability Management in the Maven Ecosystem <a href="paper/Vulnet.pdf">[Paper]</a> <a href="https://github.com/SPEAR-SE/Vulnet" target="_blank" rel="noopener noreferrer">[Code]</a></h3>
+                    <p class="publication-authors"><strong>Zeyang Ma</strong>, Shouvick Mondal, Tse-Hsun (Peter) Chen, Haoxiang Zhang, Ahmed E. Hassan</p>
+                    <p class="publication-venue">Empirical Software Engineering Journal (EMSE 2024)</p>
+                  </article>
                 </div>
+                <!-- fallback-publications:end -->
             </div>
 
         </div>
