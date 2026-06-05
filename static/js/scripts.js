@@ -2,8 +2,8 @@
 
 const content_dir = 'contents/'
 const config_file = 'config.yml'
-const content_version = '2026-05-18-1'
-const section_names = ['home', 'publications', 'education', 'service', 'awards']
+const scriptUrl = document.currentScript ? new URL(document.currentScript.src, document.baseURI) : null
+const content_version = scriptUrl ? scriptUrl.searchParams.get('v') || Date.now().toString() : Date.now().toString()
 
 const contentUrl = (path) => `${path}?v=${content_version}`
 
@@ -30,6 +30,8 @@ const prepareLinks = (root = document) => {
         link.rel = 'noopener noreferrer'
     })
 }
+const contentSectionName = (section) => section.id.replace(/-md$/, '')
+const logUnknownConfigValue = (key, value) => console.log("Unknown id and value: " + key + "," + value.toString())
 
 const applyTheme = (theme) => {
     document.documentElement.dataset.theme = theme
@@ -98,13 +100,13 @@ window.addEventListener('DOMContentLoaded', event => {
             Object.keys(yml).forEach(key => {
                 const element = document.getElementById(key)
                 if (!element) {
-                    console.log("Unknown id and value: " + key + "," + yml[key].toString())
+                    logUnknownConfigValue(key, yml[key])
                     return
                 }
                 try {
                     element.innerHTML = yml[key];
                 } catch {
-                    console.log("Unknown id and value: " + key + "," + yml[key].toString())
+                    logUnknownConfigValue(key, yml[key])
                 }
 
             })
@@ -114,15 +116,13 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Marked
     marked.use({ mangle: false, headerIds: false })
-    section_names.forEach((name, idx) => {
+    document.querySelectorAll('[id$="-md"]').forEach(section => {
+        const name = contentSectionName(section)
         fetchText(contentUrl(content_dir + name + '.md'))
             .then(markdown => {
                 const html = marked.parse(markdown);
-                const section = document.getElementById(name + '-md')
-                if (section) {
-                    section.innerHTML = html;
-                    prepareLinks(section)
-                }
+                section.innerHTML = html;
+                prepareLinks(section)
             }).then(() => {
                 // MathJax
                 if (window.MathJax && MathJax.typeset) {
