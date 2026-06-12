@@ -2,7 +2,7 @@
   <article class="publication-card">
     <h3>LLM4Log: A Systematic Review of Large Language Model-based Log Analysis <a href="paper/LLM4Log_Survey.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LLM4Log">[Code]</a></h3>
     <p class="publication-authors"><strong>Zeyang Ma</strong>, Jinqiu Yang, Tse-Hsun (Peter) Chen</p>
-    <p class="publication-venue">Under Review</p>
+    <p class="publication-venue">arXiv preprint (2026)</p>
   </article>
 
   <article class="publication-card">
