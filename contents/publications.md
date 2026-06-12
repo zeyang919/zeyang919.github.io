@@ -6,6 +6,12 @@
   </article>
 
   <article class="publication-card">
+    <h3>Crash Report Enhancement with Large Language Models: An Empirical Study <a href="paper/CrashReportEnhancement.pdf">[Paper]</a></h3>
+    <p class="publication-authors">S M Farah Al Fahim, Md Nakhla Rafi, <strong>Zeyang Ma</strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
+    <p class="publication-venue">arXiv preprint (2025)</p>
+  </article>
+
+  <article class="publication-card">
     <h3>Unsupervised, Accurate, and Efficient Log Parsing Using Smaller Open-Source Large Language Models <a href="paper/LibreLog_extension.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LibreLog">[Code]</a></h3>
     <p class="publication-authors"><strong>Zeyang Ma</strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
     <p class="publication-venue">ACM Transactions on Software Engineering and Methodology (TOSEM 2025)</p>
@@ -15,6 +21,12 @@
     <h3>Benchmarking Open-source Large Language Models For Log Level Suggestion <a href="paper/LogLevelLLM.pdf">[Paper]</a> <a href="https://github.com/sunnyh404/LogLevelLLM">[Code]</a></h3>
     <p class="publication-authors">Yi Wen Heng, <strong>Zeyang Ma</strong>, Zhenhao Li, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
     <p class="publication-venue">18th IEEE International Conference on Software Testing, Verification and Validation (ICST 2025)</p>
+  </article>
+
+  <article class="publication-card">
+    <h3>Discovery of Timeline and Crowd Reaction of Software Vulnerability Disclosures <a href="paper/VulnerabilityDisclosureTimeline.pdf">[Paper]</a></h3>
+    <p class="publication-authors">Yi Wen Heng, <strong>Zeyang Ma</strong>, Haoxiang Zhang, Zhenhao Li, Tse-Hsun (Peter) Chen</p>
+    <p class="publication-venue">arXiv preprint (2024)</p>
   </article>
 
   <article class="publication-card">
