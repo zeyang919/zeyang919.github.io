@@ -255,6 +255,13 @@ section .main-body li > ol {
     gap: 0.65rem;
 }
 
+.publication-note {
+    color: var(--muted-text);
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: -0.2rem 0 0.65rem;
+}
+
 .publication-card {
     background: var(--surface-bg);
     border: 1px solid var(--surface-border);
