@@ -14,15 +14,15 @@
   </article>
 
   <article class="publication-card">
-    <h3>Crash Report Enhancement with Large Language Models: An Empirical Study <a href="paper/CrashReportEnhancement.pdf">[Paper]</a> <a href="https://arxiv.org/abs/2509.13535">[DOI]</a></h3>
-    <p class="publication-authors">S M Farah Al Fahim, Md Nakhla Rafi, <strong>Zeyang Ma</strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
-    <p class="publication-venue">arXiv preprint (2025)</p>
+    <h3>Unsupervised, Accurate, and Efficient Log Parsing Using Smaller Open-Source Large Language Models <a href="paper/LibreLog_extension.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LibreLog">[Code]</a> <a href="https://doi.org/10.1145/3796239">[DOI]</a></h3>
+    <p class="publication-authors"><strong>Zeyang Ma</strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
+    <p class="publication-venue">ACM Transactions on Software Engineering and Methodology (TOSEM 2026)</p>
   </article>
 
   <article class="publication-card">
-    <h3>Unsupervised, Accurate, and Efficient Log Parsing Using Smaller Open-Source Large Language Models <a href="paper/LibreLog_extension.pdf">[Paper]</a> <a href="https://github.com/zeyang919/LibreLog">[Code]</a> <a href="https://doi.org/10.1145/3796239">[DOI]</a></h3>
-    <p class="publication-authors"><strong>Zeyang Ma</strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
-    <p class="publication-venue">ACM Transactions on Software Engineering and Methodology (TOSEM 2025)</p>
+    <h3>Crash Report Enhancement with Large Language Models: An Empirical Study <a href="paper/CrashReportEnhancement.pdf">[Paper]</a> <a href="https://arxiv.org/abs/2509.13535">[DOI]</a></h3>
+    <p class="publication-authors">S M Farah Al Fahim, Md Nakhla Rafi, <strong>Zeyang Ma</strong>, Dong Jae Kim, Tse-Hsun (Peter) Chen</p>
+    <p class="publication-venue">arXiv preprint (2025)</p>
   </article>
 
   <article class="publication-card">
