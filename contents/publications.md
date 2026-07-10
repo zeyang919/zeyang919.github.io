@@ -2,6 +2,12 @@
 
 <div class="publication-list">
   <article class="publication-card">
+    <h3>Bug Report Specification Refinement with Trajectory Guidance for Automated Program Repair <a href="paper/TrajSpec.pdf">[Paper]</a> <a href="https://arxiv.org/abs/2607.07882">[DOI]</a></h3>
+    <p class="publication-authors">S M Farah Al Fahim, Md Nakhla Rafi, Md Ahasanuzzaman, <strong>Zeyang Ma</strong>, Dong Jae Kim, Shaowei Wang, Tse-Hsun (Peter) Chen</p>
+    <p class="publication-venue">arXiv preprint (2026)</p>
+  </article>
+
+  <article class="publication-card">
     <h3>LogSemFuse: Semantic Evidence Fusion for Explainable Log Anomaly Detection <a href="paper/logSemFuse.pdf">[Paper]</a> <a href="https://arxiv.org/abs/2607.03599">[DOI]</a></h3>
     <p class="publication-authors">Hassan Jabri, <strong>Zeyang Ma<sup>*</sup></strong>, Zhijie Wang, Tse-Hsun Chen</p>
     <p class="publication-venue">arXiv preprint (2026)</p>
