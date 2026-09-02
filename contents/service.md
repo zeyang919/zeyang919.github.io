@@ -20,7 +20,7 @@
 - ACM International Conference on the Foundations of Software Engineering (FSE), Research Papers Track, [2024](https://2024.esec-fse.org/), [2025](https://conf.researchr.org/home/fse-2025/)
 - International Conference on Software Maintenance and Evolution (ICSME), Research Papers Track, [2024](https://conf.researchr.org/home/icsme-2024), [2026](https://conf.researchr.org/home/icsme-2026)
 - IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER), Research Papers Track, [2024](https://conf.researchr.org/home/saner-2024), [2025](https://conf.researchr.org/home/saner-2025)
-- IEEE/ACM International Conference on Software Engineering (ICSE), [2026](https://conf.researchr.org/home/icse-2026)
+- IEEE/ACM International Conference on Software Engineering (ICSE), [2026](https://conf.researchr.org/home/icse-2026), [2027](https://conf.researchr.org/home/icse-2027)
 - IEEE/ACM International Conference on Automated Software Engineering (ASE), [2025](https://conf.researchr.org/home/ase-2025)
 - The ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA), [2026](https://conf.researchr.org/home/issta-2026)
 - IEEE/ACM International Conference on Software Engineering (ICSE), New Ideas and Emerging Results (NIER) track, [2024](https://conf.researchr.org/track/icse-2024/icse-2024-new-ideas-and-emerging-results?)
