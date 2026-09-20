@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
-const marked = require('../static/js/marked.min.js');
-const yaml = require('../static/js/js-yaml.min.js');
+const marked = require('../vendor/marked/marked.min.js');
+const yaml = require('../vendor/js-yaml/js-yaml.min.js');
 
 const root = path.resolve(__dirname, '..');
 

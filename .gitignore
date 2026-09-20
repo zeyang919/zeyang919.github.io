@@ -4,7 +4,9 @@
 /.claude
 /CLAUDE.md
 /AGENTS.md
-/docs/
+
+# Local agent planning notes; other project documentation is tracked normally
+/docs/superpowers/
 
 # Local dependencies and browser verification artifacts
 /node_modules/
