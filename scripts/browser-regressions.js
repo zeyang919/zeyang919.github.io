@@ -64,12 +64,12 @@ async (page) => {
                 await route.continue();
             });
             await slow.goto(origin, { waitUntil: 'commit' });
-            await slow.locator('#home-subtitle').waitFor();
-            const before = await slow.locator('#home-subtitle').boundingBox();
+            await slow.locator('.profile-name').waitFor();
+            const before = await slow.locator('.profile-name').boundingBox();
             check(await slow.locator('#theme-toggle').isHidden(), 'Slow-load probe started after the delayed script ran');
             await slow.locator('#theme-toggle').waitFor();
             await slow.waitForTimeout(100);
-            const after = await slow.locator('#home-subtitle').boundingBox();
+            const after = await slow.locator('.profile-name').boundingBox();
             const shift = Math.abs(after.y - before.y);
             const cls = await slow.evaluate(() => window.layoutShifts.reduce((sum, value) => sum + value, 0));
             check(shift < 2, `Delayed script moved content ${shift}px at width ${width}`);
@@ -95,7 +95,7 @@ async (page) => {
             await responsive.goto(origin);
             const layout = await responsive.evaluate(() => {
                 const icons = document.querySelector('.social-icons').getBoundingClientRect();
-                const heading = document.querySelector('#home-subtitle').getBoundingClientRect();
+                const heading = document.querySelector('.profile-name').getBoundingClientRect();
                 return {
                     overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
                     overlap: icons.left < heading.right && icons.right > heading.left
