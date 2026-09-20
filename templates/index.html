@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Zeyang Ma is a Ph.D. candidate in Computer Science at Concordia University researching software engineering, mining software repositories, software maintenance, and large language models for log analysis." />
+    <meta name="author" content="Zeyang Ma" />
+    <meta name="keywords" content="Zeyang Ma, software engineering, mining software repositories, software maintenance, log analysis, large language models, Concordia University" />
+    <title id="title">{{ config:title }}</title>
+    <script>
+        (() => {
+            const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            let savedTheme = null;
+
+            try {
+                savedTheme = localStorage.getItem('theme');
+            } catch {
+                savedTheme = null;
+            }
+
+            document.documentElement.dataset.theme = savedTheme === 'dark' || savedTheme === 'light'
+                ? savedTheme
+                : systemTheme;
+        })();
+    </script>
+    <script>
+        {{ script:navigation }}
+    </script>
+    <link rel="icon" type="image/png" href="static/assets/favicon.png" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link type="text/css" href="static/css/styles.css?v=2026-05-14-9" rel="stylesheet" />
+    <link type="text/css" href="static/css/main.css?v=2026-09-20-1" rel="stylesheet" />
+    <link rel="canonical" href="https://zeyang919.github.io/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Zeyang Ma" />
+    <meta property="og:description" content="Ph.D. candidate in Computer Science at Concordia University researching software engineering, mining software repositories, software maintenance, and large language models for log analysis." />
+    <meta property="og:url" content="https://zeyang919.github.io/" />
+    <meta property="og:image" content="https://zeyang919.github.io/static/assets/img/photo.webp" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Zeyang Ma" />
+    <meta name="twitter:description" content="Ph.D. candidate in Computer Science at Concordia University researching software engineering and large language models for log analysis." />
+    <meta name="twitter:image" content="https://zeyang919.github.io/static/assets/img/photo.webp" />
+    <meta name="google-site-verification" content="nph7gNZaKLty3F7AbQZnI18MWMT2IRvA09GQW7b4X_s" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Zeyang Ma",
+            "url": "https://zeyang919.github.io/",
+            "jobTitle": "Ph.D. Candidate in Computer Science",
+            "affiliation": {
+                "@type": "CollegeOrUniversity",
+                "name": "Concordia University",
+                "url": "https://www.concordia.ca/"
+            },
+            "knowsAbout": [
+                "Software Engineering",
+                "Mining Software Repositories",
+                "Software Maintenance",
+                "Log Analysis",
+                "Large Language Models"
+            ],
+            "sameAs": [
+                "https://github.com/zeyang919",
+                "https://www.linkedin.com/in/zeyangma/",
+                "https://scholar.google.ca/citations?user=8TN9kGAAAAAJ&hl=en"
+            ]
+        }
+    </script>
+
+
+</head>
+
+<body id="page-top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <!-- Navigation-->
+    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top">{{ config:page-top-title }}</a>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme"
+                title="Switch theme" hidden>
+                <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+            </button>
+            <button class="navbar-toggler" type="button"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                MENU
+                <i class="bi-list" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#page-top" target="_self">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#publications" target="_self">PUBLICATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#education" target="_self">EDUCATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#service" target="_self">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#awards" target="_self">AWARDS</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Section -->
+    <div class="top-section" aria-hidden="true"></div>
+    <!-- Top Section -->
+
+
+    <main id="main-content" tabindex="-1">
+    <!-- Home -->
+    <section class="home-section bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+        <div class="container px-5">
+            <div class="row align-items-start">
+                <div class="col-lg-8 order-2 order-lg-1">
+                    <header>
+                        <h1 class="visually-hidden">Zeyang Ma</h1>
+                        <h2 id="home-subtitle">{{ config:home-subtitle }}</h2>
+                    </header>
+                    <div class="main-body" id="home-md">{{ content:home }}</div>
+                </div>
+                <div class="col-lg-4 profile-column order-1 order-lg-2">
+                    <div class="user-photo photo">
+                        <img class="shadow" src="static/assets/img/photo.webp?v=2026-05-18-2" width="1200" height="1200" alt="Portrait of Zeyang Ma">
+                        <div class="social-icons">
+                            <a href="mailto:zeyang919@gmail.com" class="social-icon" title="Email" aria-label="Email Zeyang Ma">
+                                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/zeyang919" class="social-icon" title="GitHub" aria-label="Zeyang Ma on GitHub" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/zeyangma/" class="social-icon" title="LinkedIn" aria-label="Zeyang Ma on LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://scholar.google.ca/citations?user=8TN9kGAAAAAJ&amp;hl=en" class="social-icon" title="Google Scholar" aria-label="Zeyang Ma on Google Scholar" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-mortarboard-fill" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Home -->
+
+    <!-- Publications -->
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
+        <div class="container px-5">
+            <header>
+                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill" aria-hidden="true"></i>&nbsp;PUBLICATIONS</h2>
+            </header>
+            <div class="main-body" id="publications-md">{{ content:publications }}</div>
+
+        </div>
+    </section>
+    <!-- Publications  -->
+
+    <!-- Education -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="education">
+        <div class="container px-5">
+            <header>
+                <h2 id="education-subtitle"><i class="bi bi-mortarboard-fill" aria-hidden="true"></i>&nbsp;EDUCATION</h2>
+            </header>
+            <div class="main-body" id="education-md">{{ content:education }}</div>
+
+        </div>
+    </section>
+    <!-- Education  -->
+
+    <!-- Service -->
+        <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="service">
+            <div class="container px-5">
+                <header>
+                    <h2 id="service-subtitle"><i class="bi bi-pc-display" aria-hidden="true"></i>&nbsp;SERVICE</h2>
+                </header>
+                <div class="main-body" id="service-md">{{ content:service }}</div>
+    
+            </div>
+        </section>
+    <!-- Service  -->
+
+    <!-- Awards -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
+        <div class="container px-5">
+            <header>
+                <h2 id="awards-subtitle"><i class="bi bi-award-fill" aria-hidden="true"></i>AWARDS </h2>
+            </header>
+            <div class="main-body" id="awards-md">{{ content:awards }}</div>
+
+        </div>
+    </section>
+    <!-- Awards -->
+    </main>
+
+    <!-- Footer-->
+    <footer class="bg-bottom text-center py-5">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <div id="copyright-text" class="mb-2">{{ config:copyright-text }}</div>
+                <div id="last-updated-text">{{ config:last-updated-text }}</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Content is already present; JavaScript progressively enhances navigation and theme controls. -->
+    <script defer src="static/js/scripts.js?v=2026-09-20-1"></script>
+
+
+</body>
+
+</html>

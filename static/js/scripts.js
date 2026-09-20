@@ -1,135 +1,85 @@
-
-
-const content_dir = 'contents/'
-const config_file = 'config.yml'
-const scriptUrl = document.currentScript ? new URL(document.currentScript.src, document.baseURI) : null
-const content_version = scriptUrl ? scriptUrl.searchParams.get('v') || Date.now().toString() : Date.now().toString()
-
-const contentUrl = (path) => `${path}?v=${content_version}`
-
-const themeStorageKey = 'theme'
-const systemTheme = () => window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-const storedTheme = () => {
+(() => {
+    const themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const themeToggle = document.getElementById('theme-toggle');
+    let selectedTheme = null;
     try {
-        const theme = localStorage.getItem(themeStorageKey)
-        return theme === 'dark' || theme === 'light' ? theme : null
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark' || saved === 'light') selectedTheme = saved;
     } catch {
-        return null
-    }
-}
-const activeTheme = () => storedTheme() || systemTheme()
-const fetchText = (url) => fetch(url).then(response => {
-    if (!response.ok) {
-        throw new Error(`Could not load ${url}: ${response.status}`)
-    }
-    return response.text()
-})
-const prepareLinks = (root = document) => {
-    root.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(link => {
-        link.target = '_blank'
-        link.rel = 'noopener noreferrer'
-    })
-}
-const contentSectionName = (section) => section.id.replace(/-md$/, '')
-const logUnknownConfigValue = (key, value) => console.log("Unknown id and value: " + key + "," + String(value ?? ''))
-
-const applyTheme = (theme) => {
-    document.documentElement.dataset.theme = theme
-    const toggle = document.getElementById('theme-toggle')
-    if (!toggle) {
-        return
+        // Keep the selection in memory when browser storage is unavailable.
     }
 
-    const isDark = theme === 'dark'
-    toggle.setAttribute('aria-label', `Switch to ${isDark ? 'light' : 'dark'} theme`)
-    toggle.title = `Switch to ${isDark ? 'light' : 'dark'} theme`
-    toggle.innerHTML = `<i class="bi ${isDark ? 'bi-sun-fill' : 'bi-moon-stars-fill'}" aria-hidden="true"></i>`
-}
-
-
-window.addEventListener('DOMContentLoaded', event => {
-    applyTheme(activeTheme())
-    prepareLinks()
-
-    const themeToggle = document.getElementById('theme-toggle')
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'
-            try {
-                localStorage.setItem(themeStorageKey, nextTheme)
-            } catch {
-                console.log('Theme preference could not be saved')
-            }
-            applyTheme(nextTheme)
-        })
-    }
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-        if (!storedTheme()) {
-            applyTheme(systemTheme())
+    const applyTheme = () => {
+        const theme = selectedTheme || (themeQuery.matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+        const label = `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`;
+        themeToggle.setAttribute('aria-label', label);
+        themeToggle.title = label;
+        themeToggle.innerHTML = `<i class="bi ${theme === 'dark' ? 'bi-sun-fill' : 'bi-moon-stars-fill'}" aria-hidden="true"></i>`;
+    };
+    themeToggle.addEventListener('click', () => {
+        selectedTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        try {
+            localStorage.setItem('theme', selectedTheme);
+        } catch {
+            // The current tab still remembers the user's choice.
         }
-    })
+        applyTheme();
+    });
+    themeQuery.addEventListener('change', applyTheme);
+    applyTheme();
+    themeToggle.hidden = false;
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
+    const nav = document.getElementById('mainNav');
+    const menu = document.getElementById('navbarResponsive');
+    const menuToggle = nav.querySelector('.navbar-toggler');
+    const links = [...menu.querySelectorAll('.nav-link')];
+    const targets = links.map(link => document.getElementById(link.hash.slice(1)));
+    let navOffset = 0;
+    let framePending = false;
+
+    const updateNavigation = () => {
+        framePending = false;
+        const navRect = nav.getBoundingClientRect();
+        const navStyle = getComputedStyle(nav);
+        // Measure the control row, excluding the expanded mobile menu.
+        const controls = [nav.querySelector('.navbar-brand'), themeToggle, menuToggle];
+        const bottom = Math.max(...controls.map(control => control.getBoundingClientRect().bottom));
+        navOffset = Math.ceil(bottom - navRect.top + parseFloat(navStyle.paddingBottom)
+            + parseFloat(navStyle.borderBottomWidth)) + 8;
+        document.documentElement.style.setProperty('--nav-offset', `${navOffset}px`);
+
+        let activeIndex = 0;
+        targets.forEach((target, index) => {
+            if (index > 0 && target.getBoundingClientRect().top <= navOffset + 1) activeIndex = index;
+        });
+        if (window.scrollY > 0 && Math.ceil(window.scrollY + window.innerHeight) >= document.documentElement.scrollHeight) {
+            activeIndex = links.length - 1;
+        }
+        links.forEach((link, index) => {
+            const active = index === activeIndex;
+            link.classList.toggle('active', active);
+            if (active) link.setAttribute('aria-current', 'location');
+            else link.removeAttribute('aria-current');
         });
     };
+    const scheduleUpdate = () => {
+        if (!framePending) {
+            framePending = true;
+            requestAnimationFrame(updateNavigation);
+        }
+    };
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.forEach(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
+    window.addEventListener('scroll', scheduleUpdate, { passive: true });
+    window.addEventListener('resize', scheduleUpdate);
+    window.addEventListener('hashchange', scheduleUpdate);
+    window.addEventListener('pageshow', scheduleUpdate);
+    if ('ResizeObserver' in window) {
+        const observer = new ResizeObserver(scheduleUpdate);
+        observer.observe(nav);
+        observer.observe(document.body);
+    }
 
-
-    // Yaml
-    fetchText(contentUrl(content_dir + config_file))
-        .then(text => {
-            const yml = jsyaml.load(text);
-            Object.keys(yml).forEach(key => {
-                const element = document.getElementById(key)
-                if (!element) {
-                    logUnknownConfigValue(key, yml[key])
-                    return
-                }
-                try {
-                    element.innerHTML = yml[key];
-                } catch {
-                    logUnknownConfigValue(key, yml[key])
-                }
-
-            })
-        })
-        .catch(error => console.log(error));
-
-
-    // Marked
-    marked.use({ mangle: false, headerIds: false })
-    document.querySelectorAll('[id$="-md"]').forEach(section => {
-        const name = contentSectionName(section)
-        fetchText(contentUrl(content_dir + name + '.md'))
-            .then(markdown => {
-                const html = marked.parse(markdown);
-                section.innerHTML = html;
-                prepareLinks(section)
-            }).then(() => {
-                // MathJax
-                if (window.MathJax && MathJax.typeset) {
-                    MathJax.typeset();
-                }
-            })
-            .catch(error => console.log(error));
-    })
-
-}); 
+    updateNavigation();
+    // Leave initial fragments and reload/history scroll restoration to the browser.
+})();

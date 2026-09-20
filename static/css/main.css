@@ -22,7 +22,7 @@
     --icon-color: #000000;
     --toggle-bg: rgba(57, 72, 210, 0.08);
     --toggle-border: rgba(57, 72, 210, 0.18);
-    --top-background-image: url('../assets/img/background.jpeg');
+    --top-background-image: url('../assets/img/background.webp');
     --top-background-color: #dbe0df;
     --top-overlay: rgba(0, 0, 0, 0);
     --photo-halo: rgba(0, 0, 0, 0.26);
@@ -56,7 +56,7 @@ html[data-theme="dark"] {
     --icon-color: #f5f6fb;
     --toggle-bg: rgba(143, 156, 255, 0.14);
     --toggle-border: rgba(143, 156, 255, 0.32);
-    --top-background-image: url('../assets/img/background_night.png');
+    --top-background-image: url('../assets/img/background_night.webp');
     --top-background-color: #10151b;
     --top-overlay: rgba(0, 0, 0, 0.18);
     --photo-halo: rgba(0, 0, 0, 0.38);
@@ -68,6 +68,41 @@ html[data-theme="dark"] {
 
 html {
     background: var(--page-bg);
+    scroll-padding-top: 0;
+}
+
+html.navigation-ready {
+    scroll-padding-top: var(--nav-offset, 5.25rem);
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.skip-link {
+    position: fixed;
+    top: -5rem;
+    left: 1rem;
+    z-index: 1100;
+    padding: 0.5rem 1rem;
+    background: var(--surface-bg);
+}
+
+.skip-link:focus {
+    top: 0.5rem;
+}
+
+/* With JavaScript disabled, keep navigation expanded and in document flow. */
+html:not(.navigation-ready) #mainNav {
+    position: static;
+}
+
+html:not(.navigation-ready) #mainNav .navbar-collapse {
+    display: block;
+}
+
+html:not(.navigation-ready) #mainNav .navbar-toggler {
+    display: none;
 }
 
 body {
@@ -100,16 +135,6 @@ body {
     background-position: center;
     background-size: cover;
     height: 25rem;
-}
-
-.top-section h2 {
-    font-weight: 400;
-}
-
-.top-section .top-section-content {
-    position: relative;
-    z-index: 1;
-    pointer-events: none;
 }
 
 .top-section:before {
@@ -191,11 +216,11 @@ section {
     padding-bottom: 1.25rem;
 }
 
-body > section:not(.top-section) {
+main > section {
     position: relative;
 }
 
-body > section:not(.top-section) > .container {
+main > section > .container {
     position: relative;
     z-index: 1;
 }
@@ -212,7 +237,7 @@ section .main-body{
     color: var(--body-text);
 }
 
-section .main-body h4 {
+#service .main-body h3 {
     color: var(--strong-text);
     font-size: 1.28rem;
     font-weight: 800;
@@ -220,7 +245,7 @@ section .main-body h4 {
     margin: 1.05rem 0 0.35rem;
 }
 
-section .main-body h5 {
+#service .main-body h4 {
     color: var(--h-title-color);
     font-size: 1rem;
     font-weight: 750;
@@ -319,28 +344,6 @@ section .main-body li > ol {
 
 
 
-.on-top {
-    position: relative;
-    z-index: 10000;
-}
-
-.top-bg {
-    background-position: center;
-    background-size: fill;
-    width: 100%;
-    height: 100%;
-}
-
-.top-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-}
-
 
 
 .photo {
@@ -411,18 +414,12 @@ section .main-body li > ol {
     transition: inherit;
 }
 
-.photo .screen {
-    position: absolute;
-    background-size: cover;
-    pointer-events: auto;
-}
+@media screen and (max-width: 991.98px) {
+    #mainNav .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
 
-.photo .button {
-    position: absolute;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 991px) {
     .top-section {
         height: 18rem;
         padding: 6rem 0;
@@ -445,6 +442,8 @@ section .main-body li > ol {
     #navbarResponsive {
         align-items: flex-start;
         order: 4;
+        max-height: calc(100dvh - var(--nav-offset, 5rem));
+        overflow-y: auto;
     }
 
     .profile-column {
@@ -510,19 +509,12 @@ section .main-body li > ol {
     }
 
     .profile-column {
-        height: 0;
         justify-content: flex-end;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin-top: -8rem;
+        margin-bottom: 1rem;
         padding-right: 0.5rem;
         position: relative;
         z-index: 2;
-    }
-
-    .profile-column .photo {
-        position: absolute;
-        right: 0.5rem;
-        top: -8.45rem;
     }
 
     .photo img {
@@ -538,5 +530,12 @@ section .main-body li > ol {
 
     .social-icon {
         font-size: 1.15rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .theme-toggle,
+    .social-icon {
+        transition: none;
     }
 }

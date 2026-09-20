@@ -5,3 +5,12 @@
 /CLAUDE.md
 /AGENTS.md
 /docs/
+
+# Local dependencies and browser verification artifacts
+/node_modules/
+/.playwright-cli/
+/output/playwright/
+/playwright-report/
+/test-results/
+/coverage/
+*.log
